@@ -1,0 +1,7 @@
+.containerWrapper{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+margin: 2px;
+padding: 2px;
+
+}

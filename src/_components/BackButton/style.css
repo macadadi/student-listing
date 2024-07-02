@@ -1,0 +1,14 @@
+.detailsBtn {
+  background: rgb(117, 234, 240);
+  padding: .5rem;
+  margin-top: .6rem;
+  width: 15rem;
+  border: 1px;
+  border-radius: .4rem;
+  color: black;
+
+}
+
+.detailsBtn:hover {
+  background: rgb(9, 230, 242);
+}

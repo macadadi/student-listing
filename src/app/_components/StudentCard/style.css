@@ -1,0 +1,41 @@
+
+.studentContainer{
+border: 1px solid white;
+margin: .4rem;
+border-radius: .4rem;
+padding: .1rem;
+background: white;
+padding-top: 2px;
+height: fit-content;
+}
+span{
+font-weight: bold;
+}
+
+.image-container {
+  width: 100%;
+  >div {
+    position: unset !important;
+  }
+
+  .image {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
+}
+
+.detailsBtn{
+  background: rgb(117, 234, 240);
+  padding: .5rem;
+  margin-top: .6rem;
+  width: 15rem;
+  border: 1px;
+  border-radius: .4rem;
+  color: black;
+
+}
+.detailsBtn:hover{
+      background: rgb(9, 230, 242);
+    }

@@ -1,0 +1,31 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin: .8rem;
+  border-top: 1px solid rgb(198, 191, 191);
+  padding-top: .4rem;
+
+  p,
+  span {
+    font-size: 14px;
+  }
+}
+
+.footer .records {
+  display: flex;
+}
+
+.next-back button {
+  margin: .2rem;
+  padding: .2rem;
+  width: 7rem;
+  background: transparent;
+  color: black;
+  border: 1px solid rgb(198, 191, 191);
+}
+
+.next-back button:hover {
+  background: rgb(198, 191, 191);
+  color: white;
+  border: 1px solid gray;
+}

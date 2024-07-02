@@ -1,0 +1,28 @@
+.filterContainer {
+  margin: 4px;
+  width: fit-content;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.filterLabel {
+  font-size: 12;
+  font-weight: 300;
+}
+
+.filterContainer:hover {
+  .filterLabel {
+    font-size: 12;
+    font-weight: bolder;
+  }
+}
+
+select {
+  width: 14rem;
+  padding: .5rem;
+  border: 2px solid #ccc;
+  border-radius: 1rem;
+  background-color: #f8f8f8;
+  font-size: 14px;
+  color: #333;
+}
