@@ -6,27 +6,21 @@
 
 .profile {
   width: 100%;
+  .details-header{
+    background: white;
+    text-align: center;
+    padding: 1rem;
+    color: rgb(239, 179, 105);
+  }
 }
 
-.profile-container,
-.profile-content {
+.profile-container {
   margin: auto;
   width: 30%;
   padding: .5rem;
   border: 1px solid rgb(180, 176, 176);
   background: white;
-}
-
-.profile-content {
-  border-top: 0px;
-  border-bottom-right-radius: .4rem;
-  border-bottom-left-radius: .4rem;
-}
-
-.profile-container {
-  border-bottom: 0px;
-  border-top-right-radius: .4rem;
-  border-top-left-radius: .4rem;
+  border-radius: .4rem;
 }
 
 p {
@@ -39,6 +33,7 @@ span {
 
 .image-container {
   width: 100%;
+  margin-bottom: 2rem;
 
   >div {
     position: unset !important;
@@ -56,7 +51,6 @@ span {
   .profile-container {
     margin: auto;
     width: 50%;
-
   }
 }
 
@@ -64,7 +58,6 @@ span {
   .profile-container {
     margin: auto;
     width: 60%;
-
   }
 }
 
@@ -72,6 +65,5 @@ span {
   .profile-container {
     margin: auto;
     width: 70%;
-
   }
 }

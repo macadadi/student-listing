@@ -13,7 +13,12 @@ function page({ params }: ParamsType) {
   return (
     <div className='container'>
       <div className='profile'>
-        <BackButton label={'Go back to listing'} />
+        <div>
+          <div className='details-header'>
+            <h2>Student details page</h2>
+          </div>
+          <BackButton label={'Go back to listing'} />
+        </div>
         <div className='profile-container'>
           <div className={'image-container '}>
             <Image
@@ -23,16 +28,17 @@ function page({ params }: ParamsType) {
               className={'image'}
             />
           </div>
+          <div>
+            <p><span>Name:</span> {data?.firstName} {data?.middleName} {data?.lastName}</p>
+            <p><span>Grade:</span> Class {data?.grade}</p>
+            <p><span>Age:</span> {calculateAge(data?.dateOfBirth)} years old </p>
+            <p><span>Date of birth:</span> {birthDate.toLocaleDateString()}</p>
+            <p><span>Gender:</span> {data?.gender}</p>
+            <p><span>Parent name:</span> {data?.parent.firstName} {data?.parent.middleName} {data?.parent.lastName}</p>
+            <p><span>Parent phone no:</span> {data?.parent.phoneNumber}</p>
+          </div>
         </div>
-        <div className='profile-content'>
-          <p><span>Name:</span> {data?.firstName} {data?.middleName} {data?.lastName}</p>
-          <p><span>Grade:</span> Class {data?.grade}</p>
-          <p><span>Age:</span> {calculateAge(data?.dateOfBirth)} years old </p>
-          <p><span>Date of birth:</span> {birthDate.toLocaleDateString()}</p>
-          <p><span>Gender:</span> {data?.gender}</p>
-          <p><span>Parent name:</span> {data?.parent.firstName} {data?.parent.middleName} {data?.parent.lastName}</p>
-          <p><span>Parent phone no:</span> {data?.parent.phoneNumber}</p>
-        </div>
+
       </div>
     </div>
   )
